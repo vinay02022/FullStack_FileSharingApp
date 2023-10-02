@@ -11,7 +11,8 @@ function App() {
         const data=new FormData();
         data.append("name",file.name);
         data.append("file",file)
-        await uploadFile(data)//API ka Function h
+        const res = await uploadFile(data)//API ka Function h
+        
       }
     }
     getImage();//call the function when component is mounted
